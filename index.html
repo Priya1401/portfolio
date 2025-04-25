@@ -49,7 +49,7 @@
     <div id="lead">
         <div id="lead-content">
             <h1>Priya Ganesan</h1>
-            <h2>Software Engineer</h2>
+<!--            <h2>Software Engineer</h2>-->
             <a href="images/Resume.pdf" class="btn-rounded-white" target="_blank">Download Resume</a>
         </div>
         <!-- End #lead-content -->
@@ -67,18 +67,26 @@
 
     <div id="about">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
+            <div class="row align-items-center">
+
+                <!-- Photo column -->
+                <div class="col-md-4 text-center about-photo">
+                    <img src="images/Linkedin.JPG" alt="Priya Ganesan"
+                         class="img-responsive rounded-photo">
                 </div>
+
+                <!-- Text column -->
                 <div class="col-md-8">
+                    <h2 class="heading">About Me</h2>
                     <p>
                         Analytical and detail-oriented AI graduate student at Northeastern University with 2+ years of experience as an Engineering Analyst at Goldman Sachs. Specialized in designing scalable big data pipelines using Kafka, PySpark, and Hadoop, with hands-on experience in CI/CD integration and real-time data processing. Proficient in a wide range of tools across data engineering, machine learning, and full-stack development. Strong foundation in algorithms and AI with practical expertise in deploying ML models and building production-grade applications. Passionate about transforming data into actionable insights and building intelligent systems that scale.
                     </p>
                 </div>
+
             </div>
         </div>
     </div>
+
     <!-- End #about -->
 
     <div id="experience" class="background-alt">
@@ -113,32 +121,31 @@
 
     <div id="education">
         <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>Khoury College Of Computer Sciences, Northeastern University</h3>
-            <span class="education-date">Sept 2024 - May 2026</span>
-            <h4>Master of Science in Artificial Intelligence</h4>
-            <ul>
-                <li>
-                    CGPA - 3.67 / 4
-                </li>
-                <li>
-                    Current Coursework - Machine Learning, Algorithms, Program Design Paradigm
-                </li>
-            </ul>
-        </div>
-
-
-        <div class="education-block">
-            <h3>Sri Sivasubramaniya Nadar College Of Engineering, Anna University</h3>
-            <span class="education-date">Aug 2018 - May 2022</span>
-            <h4>Bachelor of Engineering in Computer Science</h4>
-            <ul>
-                <li>
-                    CGPA - 8.41 / 10
-                </li>
-            </ul>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="education-block">
+                    <h3>Khoury College Of Computer Sciences, Northeastern University</h3>
+                    <span class="education-date">Sept 2024 - May 2026</span>
+                    <h4>Master of Science in Artificial Intelligence</h4>
+                    <ul>
+                        <li>CGPA - 3.67 / 4</li>
+                        <li>Current Coursework - Machine Learning, Algorithms, Program Design Paradigm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="education-block">
+                    <h3>Sri Sivasubramaniya Nadar College Of Engineering, Anna University</h3>
+                    <span class="education-date">Aug 2018 - May 2022</span>
+                    <h4>Bachelor of Engineering in Computer Science</h4>
+                    <ul>
+                        <li>CGPA - 8.41 / 10</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
+
 
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
@@ -146,7 +153,7 @@
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/lda.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
@@ -163,7 +170,7 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/cal.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
@@ -180,7 +187,7 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/gg.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
@@ -197,7 +204,7 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/image_seg.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
@@ -215,7 +222,7 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/eda.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
@@ -236,70 +243,85 @@
 
     <div id="skills">
         <h2 class="heading">Skills</h2>
+        <ul class="skills-list">
+            <!-- Languages -->
+            <li class="skill lang">Python</li>
+            <li class="skill lang">Java</li>
+            <li class="skill lang">Scala</li>
+            <li class="skill lang">SQL</li>
 
-        <div class="bubble-container">
-            <div class="bubble">
-                <h4>Languages</h4>
-                <ul class="skills-list">
-                    <li>Python</li><li>Java</li><li>Scala</li><li>SQL</li>
-                </ul>
-            </div>
+            <!-- Frameworks & Libraries -->
+            <li class="skill framework">Scikit-learn</li>
+            <li class="skill framework">NumPy</li>
+            <li class="skill framework">Pandas</li>
+            <li class="skill framework">Matplotlib</li>
+            <li class="skill framework">Seaborn</li>
+            <li class="skill framework">PyTorch</li>
+            <li class="skill framework">TensorFlow</li>
+            <li class="skill framework">Keras</li>
+            <li class="skill framework">PySpark</li>
 
-            <div class="bubble">
-                <h4>Frameworks &amp; Libraries</h4>
-                <ul class="skills-list">
-                    <li>Scikit-learn</li><li>NumPy</li><li>Pandas</li>
-                    <li>Matplotlib</li><li>Seaborn</li><li>PyTorch</li>
-                    <li>TensorFlow</li><li>Keras</li><li>PySpark</li>
-                </ul>
-            </div>
+            <!-- Big Data -->
+            <li class="skill bigdata">Hadoop</li>
+            <li class="skill bigdata">Hive</li>
+            <li class="skill bigdata">Spark</li>
+            <li class="skill bigdata">Kafka</li>
 
-            <div class="bubble">
-                <h4>Big Data</h4>
-                <ul class="skills-list">
-                    <li>Hadoop</li><li>Hive</li><li>Spark</li><li>Kafka</li>
-                </ul>
-            </div>
+            <!-- Web Development -->
+            <li class="skill web">React</li>
+            <li class="skill web">Flask</li>
+            <li class="skill web">JavaScript</li>
+            <li class="skill web">HTML</li>
+            <li class="skill web">CSS</li>
 
-            <div class="bubble">
-                <h4>Web Development</h4>
-                <ul class="skills-list">
-                    <li>React</li><li>Flask</li><li>JavaScript</li>
-                    <li>HTML</li><li>CSS</li>
-                </ul>
-            </div>
+            <!-- Tools & Platforms -->
+            <li class="skill tools">GitHub</li>
+            <li class="skill tools">GitLab</li>
+            <li class="skill tools">Jupyter Notebook</li>
 
-            <div class="bubble">
-                <h4>Tools &amp; Platforms</h4>
-                <ul class="skills-list">
-                    <li>GitHub</li><li>GitLab</li><li>Jupyter Notebook</li>
-                </ul>
-            </div>
-
-            <div class="bubble">
-                <h4>ML Models</h4>
-                <ul class="skills-list">
-                    <li>Logistic Regression</li><li>SVM</li>
-                    <li>Random Forest</li><li>LSTM</li><li>BERT</li>
-                </ul>
-            </div>
-        </div>
+            <!-- ML Models -->
+            <li class="skill model">Logistic Regression</li>
+            <li class="skill model">SVM</li>
+            <li class="skill model">Random Forest</li>
+            <li class="skill model">LSTM</li>
+            <li class="skill model">BERT</li>
+        </ul>
     </div>
-
     <!-- End #skills -->
 
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
+    <div id="contact" class="background-alt contact-section">
+        <div class="container text-center">
+            <h2 class="heading">Contact me</h2>
+            <div class="row contact-items">
+
+                <div class="col-md-4 contact-item">
+                    <div class="icon-circle">
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+                    <h4>ADDRESS</h4>
+                    <p>190 Highland St, Roxbury<br>Boston, MA, USA – 02119</p>
+                </div>
+
+                <div class="col-md-4 contact-item">
+                    <div class="icon-circle">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <h4>CONTACT NUMBER</h4>
+                    <p>+1 (857) 339-8452</p>
+                </div>
+
+                <div class="col-md-4 contact-item">
+                    <div class="icon-circle">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <h4>EMAIL ADDRESS</h4>
+                    <p><a href="mailto:shanmugapriyamurugesanganesan@gmail.com">shanmugapriyamurugesanganesan@gmail.com</a></p>
+                </div>
+
+            </div>
         </div>
-        <!-- End #contact-form -->
     </div>
+
     <!-- End #contact -->
 
     <footer>

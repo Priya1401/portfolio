@@ -701,43 +701,43 @@ footer {
     -------------------------------
 */
 
-// #skills {
-//     padding: 50px 15px;
-//     text-align: center;
-//
-//     h2 {
-//         color: $heading;
-//         margin-bottom: 50px;
-//     }
-//
-//     h4 {
-//         color: $heading;
-//         margin: 30px 0 10px;
-//         font-weight: 700;
-//         font-size: 1.3em;
-//     }
-//
-//     ul {
-//         display: flex;
-//         justify-content: center;
-//         flex-wrap: wrap;
-//         padding: 0;
-//         margin: 0 auto 20px;
-//         max-width: 900px;
-//     }
-//
-//     li {
-//         display: inline-block;
-//         margin: 7px;
-//         padding: 6px 12px;
-//         color: $heading;
-//         background: darken($background-alt, 5%);
-//         list-style: none;
-//         cursor: default;
-//         font-size: 1em;
-//         border-radius: 5px;
-//     }
-// }
+#skills {
+    padding: 50px 15px;
+    text-align: center;
+
+    h2 {
+        color: $heading;
+        margin-bottom: 50px;
+    }
+
+    h4 {
+        color: $heading;
+        margin: 30px 0 10px;
+        font-weight: 700;
+        font-size: 1.3em;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0 auto 20px;
+        max-width: 900px;
+    }
+
+    li {
+        display: inline-block;
+        margin: 7px;
+        padding: 6px 12px;
+        color: $heading;
+        background: darken($background-alt, 5%);
+        list-style: none;
+        cursor: default;
+        font-size: 1em;
+        border-radius: 5px;
+    }
+}
 
 
 /*
@@ -1016,67 +1016,5 @@ footer {
         }
     }
 
-}
-
-
-/*──────────────────────────
-  Floating bubble layout
-──────────────────────────*/
-#skills .bubble-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  padding: 40px 0;
-}
-
-#skills .bubble {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  background: #e4e4ea;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  box-sizing: border-box;
-  animation: float 6s ease-in-out infinite;
-}
-
-/* stagger timing */
-#skills .bubble:nth-child(odd)  { animation-duration: 7s; }
-#skills .bubble:nth-child(even) { animation-duration: 9s; animation-direction: reverse; }
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50%      { transform: translateY(-15px); }
-}
-
-#skills .bubble h4 {
-  margin: 0 0 8px;
-  font-size: 1em;
-  color: #374054;
-}
-
-#skills .bubble .skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 4px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-#skills .bubble .skills-list li {
-  margin: 2px;
-  padding: 4px 8px;
-  font-size: 0.8em;
-  color: #374054;
-  background: #fff;
-  border-radius: 3px;
 }
 
