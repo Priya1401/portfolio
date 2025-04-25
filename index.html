@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -47,11 +48,14 @@
     <!-- End header -->
 
     <div id="lead">
-        <div id="lead-content">
-            <h1>Priya Ganesan</h1>
+        <div id="lead-content" data-aos="fade-down">
+            <h1 data-aos="fade-up" data-aos-delay="200">Priya Ganesan</h1>
 <!--            <h2>Software Engineer</h2>-->
-            <a href="images/Resume.pdf" class="btn-rounded-white" target="_blank">Download Resume</a>
-        </div>
+            <a href="images/Resume.pdf"
+               class="btn-rounded-white" data-aos="zoom-in" data-aos-delay="500"
+               target="_blank">
+                Download Resume
+            </a>        </div>
         <!-- End #lead-content -->
 
         <div id="lead-overlay"></div>
@@ -70,13 +74,13 @@
             <div class="row align-items-center">
 
                 <!-- Photo column -->
-                <div class="col-md-4 text-center about-photo">
+                <div class="col-md-4 text-center about-photo" data-aos="fade-right">
                     <img src="images/Linkedin.JPG" alt="Priya Ganesan"
                          class="img-responsive rounded-photo">
                 </div>
 
                 <!-- Text column -->
-                <div class="col-md-8">
+                <div class="col-md-8" data-aos="fade-left" data-aos-delay="200">
                     <h2 class="heading">About Me</h2>
                     <p>
                         Analytical and detail-oriented AI graduate student at Northeastern University with 2+ years of experience as an Engineering Analyst at Goldman Sachs. Specialized in designing scalable big data pipelines using Kafka, PySpark, and Hadoop, with hands-on experience in CI/CD integration and real-time data processing. Proficient in a wide range of tools across data engineering, machine learning, and full-stack development. Strong foundation in algorithms and AI with practical expertise in deploying ML models and building production-grade applications. Passionate about transforming data into actionable insights and building intelligent systems that scale.
@@ -92,7 +96,7 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
-            <div data-date="July 2022 – July 2024">
+            <div data-date="July 2022 – July 2024" data-aos="fade-up" data-aos-offset="100">
                 <h3>Goldman Sachs</h3>
                 <h4>Engineering Analyst</h4>
                 <ul>
@@ -106,7 +110,7 @@
                 </ul>
             </div>
 
-            <div data-date="June 2021 – August 2021">
+            <div data-date="June 2021 – August 2021" data-aos="fade-up" data-aos-offset="100" data-aos-delay="150">
                 <h3>Goldman Sachs</h3>
                 <h4>Summer Analyst, Intern</h4>
                 <ul>
@@ -123,7 +127,7 @@
         <h2 class="heading">Education</h2>
         <div class="row">
             <div class="col-md-6">
-                <div class="education-block">
+                <div class="education-block" data-aos="fade-right" data-aos-duration="600">
                     <h3>Khoury College Of Computer Sciences, Northeastern University</h3>
                     <span class="education-date">Sept 2024 - May 2026</span>
                     <h4>Master of Science in Artificial Intelligence</h4>
@@ -134,7 +138,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="education-block">
+                <div class="education-block" data-aos="fade-left" data-aos-duration="600" data-aos-delay="150">
                     <h3>Sri Sivasubramaniya Nadar College Of Engineering, Anna University</h3>
                     <span class="education-date">Aug 2018 - May 2022</span>
                     <h4>Bachelor of Engineering in Computer Science</h4>
@@ -148,10 +152,10 @@
 
 
     <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
+        <h2 class="heading" data-aos="fade-up">Projects</h2>
         <div class="container">
             <div class="row">
-                <div class="project shadow-large">
+                <div class="project shadow-large" data-aos="zoom-in">
                     <div class="project-image">
                         <img src="images/lda.png" />
                     </div>
@@ -169,7 +173,7 @@
                 </div>
                 <!-- End .project -->
 
-                <div class="project shadow-large">
+                <div class="project shadow-large" data-aos="zoom-in" data-aos-delay="100">
                     <div class="project-image">
                         <img src="images/cal.png" />
                     </div>
@@ -186,7 +190,7 @@
                 </div>
                 <!-- End .project -->
 
-                <div class="project shadow-large">
+                <div class="project shadow-large" data-aos="zoom-in" data-aos-delay="100">
                     <div class="project-image">
                         <img src="images/gg.png" />
                     </div>
@@ -203,7 +207,7 @@
                 </div>
                 <!-- End .project -->
 
-                <div class="project shadow-large">
+                <div class="project shadow-large" data-aos="zoom-in" data-aos-delay="100">
                     <div class="project-image">
                         <img src="images/image_seg.png" />
                     </div>
@@ -221,7 +225,7 @@
                 </div>
                 <!-- End .project -->
 
-                <div class="project shadow-large">
+                <div class="project shadow-large" data-aos="zoom-in" data-aos-delay="100">
                     <div class="project-image">
                         <img src="images/eda.png" />
                     </div>
@@ -244,51 +248,52 @@
     <!-- End #projects -->
 
     <div id="skills">
-        <h2 class="heading">Skills</h2>
+        <h2 class="heading" data-aos="fade-up">Skills</h2>
         <ul class="skills-list">
             <!-- Languages -->
-            <li class="skill lang">Python</li>
-            <li class="skill lang">Java</li>
-            <li class="skill lang">Scala</li>
-            <li class="skill lang">SQL</li>
+            <li class="skill lang" data-aos="flip-left" data-aos-delay="0">Python</li>
+            <li class="skill lang" data-aos="flip-left" data-aos-delay="50">Java</li>
+            <li class="skill lang" data-aos="flip-left" data-aos-delay="100">Scala</li>
+            <li class="skill lang" data-aos="flip-left" data-aos-delay="150">SQL</li>
 
             <!-- Frameworks & Libraries -->
-            <li class="skill framework">Scikit-learn</li>
-            <li class="skill framework">NumPy</li>
-            <li class="skill framework">Pandas</li>
-            <li class="skill framework">Matplotlib</li>
-            <li class="skill framework">Seaborn</li>
-            <li class="skill framework">PyTorch</li>
-            <li class="skill framework">TensorFlow</li>
-            <li class="skill framework">Keras</li>
-            <li class="skill framework">PySpark</li>
+            <li class="skill framework" data-aos="flip-left" data-aos-delay="200">Scikit-learn</li>
+            <li class="skill framework" data-aos="flip-left" data-aos-delay="250">NumPy</li>
+            <li class="skill framework" data-aos="flip-left" data-aos-delay="300">Pandas</li>
+            <li class="skill framework" data-aos="flip-left" data-aos-delay="350">Matplotlib</li>
+            <li class="skill framework" data-aos="flip-left" data-aos-delay="400">Seaborn</li>
+            <li class="skill framework" data-aos="flip-left" data-aos-delay="450">PyTorch</li>
+            <li class="skill framework" data-aos="flip-left" data-aos-delay="500">TensorFlow</li>
+            <li class="skill framework" data-aos="flip-left" data-aos-delay="550">Keras</li>
+            <li class="skill framework" data-aos="flip-left" data-aos-delay="600">PySpark</li>
 
             <!-- Big Data -->
-            <li class="skill bigdata">Hadoop</li>
-            <li class="skill bigdata">Hive</li>
-            <li class="skill bigdata">Spark</li>
-            <li class="skill bigdata">Kafka</li>
+            <li class="skill bigdata" data-aos="flip-left" data-aos-delay="650">Hadoop</li>
+            <li class="skill bigdata" data-aos="flip-left" data-aos-delay="700">Hive</li>
+            <li class="skill bigdata" data-aos="flip-left" data-aos-delay="750">Spark</li>
+            <li class="skill bigdata" data-aos="flip-left" data-aos-delay="800">Kafka</li>
 
             <!-- Web Development -->
-            <li class="skill web">React</li>
-            <li class="skill web">Flask</li>
-            <li class="skill web">JavaScript</li>
-            <li class="skill web">HTML</li>
-            <li class="skill web">CSS</li>
+            <li class="skill web" data-aos="flip-left" data-aos-delay="850">React</li>
+            <li class="skill web" data-aos="flip-left" data-aos-delay="900">Flask</li>
+            <li class="skill web" data-aos="flip-left" data-aos-delay="950">JavaScript</li>
+            <li class="skill web" data-aos="flip-left" data-aos-delay="1000">HTML</li>
+            <li class="skill web" data-aos="flip-left" data-aos-delay="1050">CSS</li>
 
             <!-- Tools & Platforms -->
-            <li class="skill tools">GitHub</li>
-            <li class="skill tools">GitLab</li>
-            <li class="skill tools">Jupyter Notebook</li>
+            <li class="skill tools" data-aos="flip-left" data-aos-delay="1100">GitHub</li>
+            <li class="skill tools" data-aos="flip-left" data-aos-delay="1150">GitLab</li>
+            <li class="skill tools" data-aos="flip-left" data-aos-delay="1200">Jupyter Notebook</li>
 
-            <!-- ML Models -->
-            <li class="skill model">Logistic Regression</li>
-            <li class="skill model">SVM</li>
-            <li class="skill model">Random Forest</li>
-            <li class="skill model">LSTM</li>
-            <li class="skill model">BERT</li>
+            <!-- Machine Learning Models -->
+            <li class="skill model" data-aos="flip-left" data-aos-delay="1250">Logistic Regression</li>
+            <li class="skill model" data-aos="flip-left" data-aos-delay="1300">SVM</li>
+            <li class="skill model" data-aos="flip-left" data-aos-delay="1350">Random Forest</li>
+            <li class="skill model" data-aos="flip-left" data-aos-delay="1400">LSTM</li>
+            <li class="skill model" data-aos="flip-left" data-aos-delay="1450">BERT</li>
         </ul>
     </div>
+
     <!-- End #skills -->
 
     <div id="contact" class="background-alt contact-section">
@@ -359,6 +364,14 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+          duration: 800,
+          once: true
+        });
+    </script>
+
 </body>
 
 </html>
