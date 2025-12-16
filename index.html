@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
@@ -50,12 +51,12 @@
     <div id="lead">
         <div id="lead-content" data-aos="fade-down">
             <h1 data-aos="fade-up" data-aos-delay="200">Priya Ganesan</h1>
-<!--            <h2>Software Engineer</h2>-->
-            <a href="images/Resume.pdf"
-               class="btn-rounded-white" data-aos="zoom-in" data-aos-delay="500"
-               target="_blank">
+            <!--            <h2>Software Engineer</h2>-->
+            <a href="images/Resume.pdf" class="btn-rounded-white" data-aos="zoom-in" data-aos-delay="500"
+                target="_blank">
                 Download Resume
-            </a>        </div>
+            </a>
+        </div>
         <!-- End #lead-content -->
 
         <div id="lead-overlay"></div>
@@ -75,15 +76,16 @@
 
                 <!-- Photo column -->
                 <div class="col-md-4 text-center about-photo" data-aos="fade-right">
-                    <img src="images/Linkedin.JPG" alt="Priya Ganesan"
-                         class="img-responsive rounded-photo">
+                    <img src="images/Linkedin.JPG" alt="Priya Ganesan" class="img-responsive rounded-photo">
                 </div>
 
                 <!-- Text column -->
                 <div class="col-md-8" data-aos="fade-left" data-aos-delay="200">
                     <h2 class="heading">About Me</h2>
                     <p>
-                        Analytical and detail-oriented AI graduate student at Northeastern University with 2+ years of experience as an Engineering Analyst at Goldman Sachs. Specialized in designing scalable big data pipelines using Kafka, PySpark, and Hadoop, with hands-on experience in CI/CD integration and real-time data processing. Proficient in a wide range of tools across data engineering, machine learning, and full-stack development. Strong foundation in algorithms and AI with practical expertise in deploying ML models and building production-grade applications. Passionate about transforming data into actionable insights and building intelligent systems that scale.
+                        Data-centric AI Engineer specializing in scalable infrastructure for machine learning. Leverages
+                        2 years of experience optimizing real-time ETL pipelines at Goldman Sachs to design scalable AI
+                        architectures and automate end-to-end learning lifecycles in production.
                     </p>
                 </div>
 
@@ -98,25 +100,38 @@
         <div id="experience-timeline">
             <div data-date="July 2022 – July 2024" data-aos="fade-up" data-aos-offset="100">
                 <h3>Goldman Sachs</h3>
-                <h4>Engineering Analyst</h4>
+                <h4>Software Engineer</h4>
                 <ul>
-                    <li>Designed and maintained ETL pipelines leveraging Kafka and Elasticsearch, ensuring efficient data ingestion and optimized loading into HDFS for large-scale data processing.</li>
-                    <li>Monitored, supported, and resolved issues and alerts in a complex automated data processing framework, handling 230 data groups with 18,150 datasets, ensuring seamless data flow and integrity.</li>
-                    <li>Developed a characteristic framework using PySpark to implement 32 custom constraints on daily acquired financial data, enabling enhanced security customization for large-scale investments.</li>
-                    <li>Onboarded 12 new datasets by integrating web scraping techniques and file-based data acquisition, efficiently processing and storing structured data in HDFS.</li>
-                    <li>Introduced manual compaction feature for Parquet paths, enhancing storage efficiency and adding flexibility in data organization within the framework, optimizing retrieval speeds and reducing storage overhead.</li>
-                    <li>Integrated CI/CD pipelines into the data engineering workflow, automating builds, tests, and deployments using GitHub and Jenkins, significantly improving deployment reliability and reducing release turnaround time.</li>
-                    <li>Executed weekly production releases with precision, ensuring smooth deployments by leveraging GitHub for version control and real-time monitoring to track changes and mitigate risks.</li>
+                    <li>Engineered high-performance real-time ETL pipelines using Kafka and Elasticsearch, processing
+                        over 12 Terabytes of daily financial data for optimized HDFS loading.</li>
+                    <li>Optimized Parquet storage architecture via manual compaction strategies, achieving a 23%
+                        improvement in storage efficiency and significantly reducing downstream query latency for
+                        analytics teams.</li>
+                    <li>Developed a PySpark-based automated validation framework with 32 custom constraints and PyTest
+                        integration, catching an average of 50+ critical data anomalies weekly prior to production
+                        ingestion.</li>
+                    <li>Managed the integrity of a complex distributed ecosystem spanning 230 data groups and 18K+
+                        datasets, reducing data availability incidents by 30% through proactive monitoring.</li>
+                    <li>Implemented CI/CD pipelines via GitHub Actions to automate build, test, and deployment stages,
+                        accelerating release cycles from weekly to daily and eliminating manual deployment errors.</li>
+                    <li>Onboarded 12+ new external datasets through custom web scraping and file-based ingestion
+                        workflows, transforming raw inputs into structured HDFS assets for dynamic reporting.</li>
                 </ul>
             </div>
 
-            <div data-date="June 2021 – August 2021" data-aos="fade-up" data-aos-offset="100" data-aos-delay="150">
+            <div data-date="June 2021 – Aug 2021" data-aos="fade-up" data-aos-offset="100" data-aos-delay="150">
                 <h3>Goldman Sachs</h3>
-                <h4>Summer Analyst, Intern</h4>
+                <h4>Software Intern</h4>
                 <ul>
-                    <li>Designed and developed a new UI from scratch using ReactJS and Redux to facilitate adding, updating, and maintaining securities in the firm’s database, enhancing user experience and operational efficiency.</li>
-                    <li>Implemented REST APIs to enable seamless database interactions, improving data consistency and system reliability.</li>
-                    <li>Built and tested dynamic front-end components, ensuring robust database connectivity and a smooth, user-friendly interface.</li>
+                    <li>Developed an interactive ReactJS + Redux dashboard to streamline the creation and management of
+                        securities within the firm’s internal database, improving data entry efficiency for analysts by
+                        ~40%.</li>
+                    <li>Designed and implemented secure RESTful APIs for real-time communication between UI and backend
+                        systems, supporting thousands of daily internal user requests.</li>
+                    <li>Optimized front-end components for responsiveness and performance, reducing page load times by
+                        over 30% to ensure a smoother workflow for financial analysts.</li>
+                    <li>Collaborated with senior engineers to integrate the application into the production environment,
+                        gaining hands-on experience with agile practices in large-scale financial systems.</li>
                 </ul>
             </div>
         </div>
@@ -132,8 +147,8 @@
                     <span class="education-date">Sept 2024 - May 2026</span>
                     <h4>Master of Science in Artificial Intelligence</h4>
                     <ul>
-                        <li>CGPA - 3.67 / 4</li>
-                        <li>Current Coursework - Machine Learning, Algorithms, Program Design Paradigm</li>
+                        <li>CGPA: 3.6/4.0</li>
+                        <li>Current Coursework - Machine Learning Operations, Algorithms, Data Mining Techniques</li>
                     </ul>
                 </div>
             </div>
@@ -143,7 +158,7 @@
                     <span class="education-date">Aug 2018 - May 2022</span>
                     <h4>Bachelor of Engineering in Computer Science</h4>
                     <ul>
-                        <li>CGPA - 8.41 / 10</li>
+                        <li>CGPA: 8.42/10</li>
                     </ul>
                 </div>
             </div>
@@ -157,87 +172,76 @@
             <div class="row">
                 <div class="project shadow-large" data-aos="zoom-in">
                     <div class="project-image">
+                        <img src="images/Audioseek.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>AudioSEEK: Timestamp-Grounded Spoiler Free Q&A for Audiobooks</h3>
+                        <p>Python, GCP (GKE), Terraform, RAG</p>
+                        <p>
+                            Architected a multimodal RAG system transforming audiobooks into interactive Q&A; engineered
+                            a timestamp-alignment algorithm using FasterWhisper to ground LLM responses in specific
+                            audio segments. Implemented a "Spoiler-Safe" reasoning engine using Google Gemini and BGE-m3
+                            embeddings.
+                        </p>
+                        <a href="https://github.com/Priya1401/AudioSEEK" target="_blank">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="images/llm.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>LLMPedia: AI-Powered Knowledge Platform</h3>
+                        <p>Python, LangChain, OpenAI API, Flask, ReactJS</p>
+                        <p>
+                            Developed a context-aware knowledge platform leveraging large language models for
+                            information retrieval and conversational learning. Implemented RAG-based querying with
+                            structured prompt templates and a full-stack web interface.
+                        </p>
+                        <a href="https://github.com/Priya1401/LLMPedia" target="_blank">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="images/lol.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Team-Play Archetypes in League of Legends</h3>
+                        <p>Python, K-Means, PCA, Matplotlib, Scikit-learn</p>
+                        <p>
+                            Built K-Means clustering models on a dataset of ~68K ranked players to classify gameplay
+                            behavior using metrics such as fighting efficiency, farming, vision control, and objective
+                            participation.
+                        </p>
+                        <a href="https://github.com/fr1way/League-Playstyle-Analysis" target="_blank">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-image">
                         <img src="images/lda.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Twitter Sentiment Analysis</h3>
-                        <p> LSTM, BERT, LDA, Flask</p>
+                        <p>ML, LSTM, BERT, LDA, Flask</p>
                         <p>
-                            Built a sentiment analysis system comparing traditional ML models (Logistic Regression, SVM, Random Forest) with deep learning approaches (LSTM, BERT) using TF-IDF and Word2Vec. Deployed a Flask web app for real-time sentiment classification and integrated topic modeling with LDA to surface key complaint themes.
+                            Created a real-time sentiment classification system comparing ML models (Logistic
+                            Regression, SVM, Random Forest) and deep learning models (LSTM, BERT) using TF-IDF and
+                            Word2Vec. Deployed a Flask web app integrated with LDA topic modeling.
                         </p>
-                        <a href="https://github.com/Priya1401/Sentiment_Analysis", target="_blank">View
-                            Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="project-image">
-                        <img src="images/cal.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Virtual Calendar Application</h3>
-                        <p> Java, Swing</p>
-                        <p>
-                            Developed in Java using MVC design patterns, supporting creation and management of multiple calendars with single and recurring events. Enabled event editing, import/export via CSV, and multi-mode interaction through GUI, text, and script-based execution.
-                        </p>
-                        <a>Access on Request</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="project-image">
-                        <img src="images/gg.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Guardians Gambit: A 2D Reinforcement Learning based game</h3>
-                        <p>Pygame, Q-Learning, Tiled</p>
-                        <p>
-                            Designing an adversarial reinforcement learning game where thief and guard agents are trained using Q-learning and Deep Q-Networks (DQN) to develop strategic behaviors for a simulated heist.
-                        </p>
-                        <a href="https://github.com/Priya1401/Guardians_Gambit", target="_blank">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="project-image">
-                        <img src="images/image_seg.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>
-                            Natural Disaster Analysis using Satellite Images and Real-time Data</h3>
-                        <p>Python, U-Net, NLP</p>
-                        <p>
-                            Developed a disaster impact assessment system by integrating segmented satellite images with real-time Twitter data, leveraging U-Net for image segmentation and NLP for sentiment-based region classification.
-                        </p>
-                        <a href="https://arxiv.org/abs/2311.09947", target="_blank">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="project-image">
-                        <img src="images/eda.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Exploratory Data Analysis on Post-Disaster Heterogeneous Dataset</h3>
-                        <p>SnowFlake, Apache Superset</p>
-                        <p>
-                            Conducted statistical and visual analysis of disaster data to evaluate correlations between climate change, natural disasters, and economic impact, providing insights for risk management and preparedness.
-                        </p>
-                        <a href="https://journal.gnest.org/publication/gnest_04382", target="_blank">View
-                            Project</a>
+                        <a href="https://github.com/Priya1401/Sentiment_Analysis" target="_blank">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -256,41 +260,40 @@
             <li class="skill lang" data-aos="flip-left" data-aos-delay="100">Scala</li>
             <li class="skill lang" data-aos="flip-left" data-aos-delay="150">SQL</li>
 
-            <!-- Frameworks & Libraries -->
-            <li class="skill framework" data-aos="flip-left" data-aos-delay="200">Scikit-learn</li>
-            <li class="skill framework" data-aos="flip-left" data-aos-delay="250">NumPy</li>
-            <li class="skill framework" data-aos="flip-left" data-aos-delay="300">Pandas</li>
-            <li class="skill framework" data-aos="flip-left" data-aos-delay="350">Matplotlib</li>
-            <li class="skill framework" data-aos="flip-left" data-aos-delay="400">Seaborn</li>
-            <li class="skill framework" data-aos="flip-left" data-aos-delay="450">PyTorch</li>
-            <li class="skill framework" data-aos="flip-left" data-aos-delay="500">TensorFlow</li>
-            <li class="skill framework" data-aos="flip-left" data-aos-delay="550">Keras</li>
-            <li class="skill framework" data-aos="flip-left" data-aos-delay="600">PySpark</li>
+            <!-- Data Engineering -->
+            <li class="skill bigdata" data-aos="flip-left" data-aos-delay="200">Kafka</li>
+            <li class="skill bigdata" data-aos="flip-left" data-aos-delay="250">PySpark</li>
+            <li class="skill bigdata" data-aos="flip-left" data-aos-delay="300">Hadoop</li>
+            <li class="skill bigdata" data-aos="flip-left" data-aos-delay="350">Hive</li>
+            <li class="skill bigdata" data-aos="flip-left" data-aos-delay="400">HDFS</li>
+            <li class="skill bigdata" data-aos="flip-left" data-aos-delay="450">Elasticsearch</li>
 
-            <!-- Big Data -->
-            <li class="skill bigdata" data-aos="flip-left" data-aos-delay="650">Hadoop</li>
-            <li class="skill bigdata" data-aos="flip-left" data-aos-delay="700">Hive</li>
-            <li class="skill bigdata" data-aos="flip-left" data-aos-delay="750">Spark</li>
-            <li class="skill bigdata" data-aos="flip-left" data-aos-delay="800">Kafka</li>
+            <!-- MLOps & DevOps -->
+            <li class="skill tools" data-aos="flip-left" data-aos-delay="500">Airflow</li>
+            <li class="skill tools" data-aos="flip-left" data-aos-delay="550">MLflow</li>
+            <li class="skill tools" data-aos="flip-left" data-aos-delay="600">Docker</li>
+            <li class="skill tools" data-aos="flip-left" data-aos-delay="650">DVC</li>
+            <li class="skill tools" data-aos="flip-left" data-aos-delay="700">GitHub Actions</li>
 
-            <!-- Web Development -->
-            <li class="skill web" data-aos="flip-left" data-aos-delay="850">React</li>
-            <li class="skill web" data-aos="flip-left" data-aos-delay="900">Flask</li>
-            <li class="skill web" data-aos="flip-left" data-aos-delay="950">JavaScript</li>
-            <li class="skill web" data-aos="flip-left" data-aos-delay="1000">HTML</li>
-            <li class="skill web" data-aos="flip-left" data-aos-delay="1050">CSS</li>
+            <!-- Cloud & Infra -->
+            <li class="skill tools" data-aos="flip-left" data-aos-delay="750">GCP</li>
+            <li class="skill tools" data-aos="flip-left" data-aos-delay="800">GKE</li>
+            <li class="skill tools" data-aos="flip-left" data-aos-delay="850">Terraform</li>
 
-            <!-- Tools & Platforms -->
-            <li class="skill tools" data-aos="flip-left" data-aos-delay="1100">GitHub</li>
-            <li class="skill tools" data-aos="flip-left" data-aos-delay="1150">GitLab</li>
-            <li class="skill tools" data-aos="flip-left" data-aos-delay="1200">Jupyter Notebook</li>
+            <!-- ML/AI -->
+            <li class="skill model" data-aos="flip-left" data-aos-delay="900">Scikit-learn</li>
+            <li class="skill model" data-aos="flip-left" data-aos-delay="950">PyTorch</li>
+            <li class="skill model" data-aos="flip-left" data-aos-delay="1000">TensorFlow</li>
+            <li class="skill model" data-aos="flip-left" data-aos-delay="1050">Keras</li>
+            <li class="skill model" data-aos="flip-left" data-aos-delay="1100">BERT</li>
+            <li class="skill model" data-aos="flip-left" data-aos-delay="1150">LSTM</li>
+            <li class="skill model" data-aos="flip-left" data-aos-delay="1200">U-Net</li>
 
-            <!-- Machine Learning Models -->
-            <li class="skill model" data-aos="flip-left" data-aos-delay="1250">Logistic Regression</li>
-            <li class="skill model" data-aos="flip-left" data-aos-delay="1300">SVM</li>
-            <li class="skill model" data-aos="flip-left" data-aos-delay="1350">Random Forest</li>
-            <li class="skill model" data-aos="flip-left" data-aos-delay="1400">LSTM</li>
-            <li class="skill model" data-aos="flip-left" data-aos-delay="1450">BERT</li>
+            <!-- Backend/Web -->
+            <li class="skill web" data-aos="flip-left" data-aos-delay="1250">FastAPI</li>
+            <li class="skill web" data-aos="flip-left" data-aos-delay="1300">Flask</li>
+            <li class="skill web" data-aos="flip-left" data-aos-delay="1350">REST APIs</li>
+            <li class="skill web" data-aos="flip-left" data-aos-delay="1400">ReactJS</li>
         </ul>
     </div>
 
@@ -306,7 +309,7 @@
                         <i class="fa fa-map-marker"></i>
                     </div>
                     <h4>ADDRESS</h4>
-                    <p>190 Highland St, Roxbury<br>Boston, MA, USA – 02119</p>
+                    <p>23 Marcella, Roxbury<br>Boston, MA, USA – 02119</p>
                 </div>
 
                 <div class="col-md-4 contact-item">
@@ -322,7 +325,9 @@
                         <i class="fa fa-envelope"></i>
                     </div>
                     <h4>EMAIL ADDRESS</h4>
-                    <p><a href="mailto:shanmugapriyamurugesanganesan@gmail.com">shanmugapriyamurugesanganesan@gmail.com</a></p>
+                    <p><a
+                            href="mailto:shanmugapriyamurugesanganesan@gmail.com">shanmugapriyamurugesanganesan@gmail.com</a>
+                    </p>
                 </div>
 
             </div>
@@ -350,10 +355,12 @@
                             <a href="mailto:shanmugapriyamurugesanganesan@gmail.com"><i class="fa fa-envelope"></i></a>
                         </li>
                         <li>
-                            <a href="https://github.com/Priya1401" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://github.com/Priya1401" target="_blank"><i class="fa fa-github"
+                                    aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/shanmuga-priya-m-g-6678001ba/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/shanmuga-priya-m-g-6678001ba/" target="_blank"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -367,8 +374,8 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
-          duration: 800,
-          once: true
+            duration: 800,
+            once: true
         });
     </script>
 
